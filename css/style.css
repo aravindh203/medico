@@ -3,6 +3,21 @@
 	margin:0;
 	box-sizing:border-box;
 }
+.menu-card{
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+	z-index: 5;
+	display: none;
+}
+.menu-card-content{
+	line-height: 3;
+	height: 90%;
+}
+.menu-card-content a{
+	text-decoration: none;
+	color: black;
+}
 .top-bar{
 	background-color:#3fbbc0;
 	width:100%;
@@ -28,18 +43,20 @@
 	height:85vh;
 	background-size:cover;
 	background-position:center;
+	background-repeat: no-repeat;
 }
 .slide-image-2{
 	background-image:url(../images/slide/slide-2.jpg);
 	height:85vh;
-	background-size:100%;
-	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 .slide-image-3{
 	background-image:url(../images/slide/slide-3.jpg);
 	height:85vh;
-	background-size:100%;
+	background-size:cover;
 	background-position:center;
+	background-repeat: no-repeat;
 }
 .circle{
 	width:13px !important;
@@ -125,6 +142,9 @@
 }
 .about-heading p{
 	font-size:18px;
+}
+.about-image{
+	height: 100%;
 }
 .about-image img{
 	width:100%;
@@ -217,6 +237,9 @@
 .service-end-button button:hover{
 	background-color:#3fbbc0ba;
 }
+.tab-content{
+	height: 100%;
+}
 .dipartment-right p{
 	font-size:16.5px;
 	color:grey;
@@ -238,6 +261,12 @@
 #list-tab .active{
 	background-color:#f7fcfc;
 	border-left:5px solid #3fbbc0 !important;
+}
+#list-tab .active p{
+	color: black !important;
+}
+#list-tab .active h5{
+	color: #3fbbc0 !important;
 }
 .list-hover:hover h5{
 	color:#3fbbc0;

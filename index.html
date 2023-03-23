@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MEDICAL</title>
+	<title>MEDICAL</title> 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
 	<meta charset="UTF-8">
@@ -14,10 +14,26 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body id="gotop">
+	<section class="menu-card position-fixed top-0 right-0 p-4">
+		<div class="w-100">
+			<div class="w-100 text-end py-2 fs-2">
+				<i class="bi bi-x menu-icon-close text-white fs-1"></i>
+			</div>
+			<div class="menu-card-content bg-white p-3 rounded-1">
+				<a href="#home" class="link1 d-block">HOME</a>
+				<a href="#about" class="link2 d-block">ABOUT</a>
+				<a href="#services" class="link3 d-block">SERVICES</a>
+				<a href="#dipartment" class="link4 d-block">DEPARTMENTS</a>
+				<a href="#doctors" class="link5 d-block">DOCTORS</a>
+				<a href="#" class="link6 d-block">DROP DOWN</a>
+				<a href="#contact" class="link7 d-block">CONTACT</a>
+			</div>
+		</div>
+	</section>
 	<section >
 		<div class="top-bar text-white">
 			<div class="container">
-				<div class="d-flex justify-content-between pt-2">
+				<div class=" d-flex justify-content-center justify-content-sm-between pt-2">
 					<div >
 						<p class="fw-bold d-none  d-sm-flex"><i class="bi bi-clock"></i>Monday - Saturday, 8AM to 10PM</i></p>
 					</div>
@@ -34,7 +50,7 @@
 			<a class="navbar-brand" href="#"><img src="images/logo.png" alt="no image" width="120px" height="40px"></a>
 			
 			<div class="collapse navbar-collapse" id="navbarScroll">
-			  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+			  <ul class="navbar-nav me-auto my-2  my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 				<li class="nav-item">
 				  <a class="nav-link" href="#home">Home</a>
 				</li>
@@ -66,9 +82,19 @@
 				  <a class="nav-link" href="#contact">contact</a>
 				</li>
 			  </ul>
-			  <form class="d-flex top-button">
-				<button class="btn text-white" type="submit">Make an Appionment</button>
-			  </form>
+			 
+			  
+			</div>
+			 <form class=" d-none d-lg-flex top-button">
+					<button class="btn text-white" type="submit">Make an Appionment</button>
+				</form>
+			<div class="d-flex d-lg-none">
+				<form class="top-button">
+					<button class="btn text-white" type="submit">Appionment</button>
+				</form>
+				<div class="menu-list-icon ps-3 d-lg-none">
+					<i class="bi bi-list menu-list-icons fs-2"></i>
+				</div>
 			</div>
 		  </div>
 		</nav>
@@ -119,7 +145,7 @@
 	<section class="home-cards sec-padd">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
 					<div class="home-card shadow p-4 rounded position-relative">
 						<div class="home-icon">
 							<i class="fa fa-heartbeat"></i>
@@ -128,7 +154,7 @@
 						<p class="pt-2">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
 					<div class="home-card shadow p-4 rounded-3 position-relative">
 						<div class="home-icon">
 							<i class="fa fa-pills"></i>
@@ -137,7 +163,7 @@
 						<p class="pt-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
 					<div class="home-card shadow p-4 rounded-3 position-relative">
 						<div class="home-icon">
 							<i class="fa fa-thermometer"></i>
@@ -146,7 +172,7 @@
 						<p class="pt-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 my-3">
 					<div class="home-card shadow p-4 rounded-3 position-relative">
 						<div class="home-icon">
 							<i class="fa fa-dna"></i>
@@ -180,7 +206,7 @@
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-6">
-					<div class="about-image">
+					<div class="about-image d-flex align-items-center">
 						<img src="images/about.jpg"></img>
 					</div>
 				</div>
@@ -202,29 +228,29 @@
 	<section class="about-cards sec-padd">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="about-card p-4 shadow-lg">
+				<div class="col-12 col-sm-6 my-2 col-md-6 col-lg-3">
+					<div class="about-card p-4 shadow">
 						<h1><i class="fa fa-user-md"></i>85</h1>
 						<p class="pt-1"><b>Doctors</b> consequuntur quae qui deca rode</p>
 						<a class="fw-bold text-decoration-none">Find out more</a>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="about-card p-4 shadow-lg">
+				<div class="col-12 col-sm-6 my-2 col-md-6 col-lg-3">
+					<div class="about-card p-4 shadow">
 						<h1><i class="fa fa-hospital"></i>26</h1>
 						<p class="pt-1"><b>Departments</b> adipisci atque cum quia aut numquam delectus</p>
 						<a class="fw-bold text-decoration-none">Find out more</a>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="about-card p-4 shadow-lg">
+				<div class="col-12 col-sm-6 my-2 col-md-6 col-lg-3">
+					<div class="about-card p-4 shadow">
 						<h1><i class="fa fa-flask"></i>14</h1>
 						<p class="pt-1"><b>Research</b> Lab aut commodi quaerat. Aliquam ratione</p>
 						<a class="fw-bold text-decoration-none">Find out more</a>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="about-card p-4 shadow-lg">
+				<div class="col-12 col-sm-6 my-2 col-md-6 col-lg-3">
+					<div class="about-card p-4 shadow">
 						<h1 class="fw-bold"><i class="fa fa-award"></i>150</h1>
 						<p class="pt-1"><b>Awards</b> rerum asperiores dolor molestiae doloribu</p>
 						<a class="fw-bold text-decoration-none">Find out more</a>
@@ -473,7 +499,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-8">
-					<div class="tab-content" id="nav-tabContent">
+					<div class="tab-content d-flex align-items-center" id="nav-tabContent">
 					  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
 							<h3 class="fw-bold pb-3">Cardiology</h3>
 							<i>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</i>
@@ -612,7 +638,7 @@
 				<p class="pt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="doctors-card">
 						<div class="doctors-image position-relative">
 							<img src="images/doctors/doctors-1.jpg" width="100%" alt="no image">
@@ -629,7 +655,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="doctors-card">
 						<div class="doctors-image position-relative">
 							<img src="images/doctors/doctors-2.jpg" width="100%" alt="no image">
@@ -646,7 +672,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="doctors-card">
 						<div class="doctors-image position-relative">
 							<img src="images/doctors/doctors-3.jpg" width="100%" alt="no image">
@@ -663,7 +689,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3">
 					<div class="doctors-card">
 						<div class="doctors-image position-relative">
 							<img src="images/doctors/doctors-4.jpg" width="100%" alt="no image">
@@ -730,7 +756,7 @@
 				<p class="pt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 			</div>
 			<div class="row">
-				<div class="col-12 col-sm-6 col-md-3 mt-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
 					<div class="prize-card shadow-sm">
 						<div class="prize-card-head py-2 text-center bg-light">
 							<h6 class="pt-2 fw-bold text-secondary">Free</h6>
@@ -750,7 +776,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3 mt-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
 					<div class="prize-card shadow-sm">
 						<div class="prize-card-head py-2 prize-active text-center rounded-top">
 							<h6 class="pt-2 fw-bold">Business</h6>
@@ -770,7 +796,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3 mt-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
 					<div class="prize-card shadow-sm">
 						<div class="prize-card-head py-2 text-center bg-light">
 							<h6 class="pt-2 fw-bold text-secondary">Developer</h6>
@@ -790,7 +816,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3 mt-3">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
 					<div class="prize-card shadow-sm position-relative overflow-hidden">
 						<div class="position-absolute advanced">
 							<p class="px-5 py-1 text-light">Advanced</p>
@@ -892,7 +918,7 @@
 	<section class="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-6">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-3">
 					<div class="row">
 						<div class="col-12">
 							<div class="text-center shadow py-3 rounded">
@@ -931,7 +957,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-12 col-md-6 px-4">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-3 px-4">
 					<div class="row shadow px-3 py-4 rounded">
 						<div class="col-12 col-md-6 py-2">
 							<div class="contact-input form-group">
@@ -970,7 +996,7 @@
 						<p class="pt-2">A108 Adam Street<br> NY 535022, USA</p>
 						<span class="d-block pt-2"><b>Phone</b>:+1 5589 55488 55</span>
 						<span><b>Email</b>: info@example.com</span>
-						<div class="footer-icons pt-4 d-flex">
+						<div class="footer-icons pt-4 pb-3  d-flex">
 							<div class="footer-icon rounded d-flex justify-content-center align-items-center">
 								<i class="bi bi-twitter"></i>
 							</div>
